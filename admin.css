@@ -87,15 +87,6 @@ button:hover {
     }
 }
 
-@keyframes cube {
-    0% {
-        transform: rotateY(0deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
-}
-
 .textflare-item.zoom {
     animation: zoom-in-out var(--zoom-duration) infinite;
 }
@@ -106,10 +97,6 @@ button:hover {
 
 .textflare-item.fade {
     animation-name: fade;
-}
-
-.textflare-item.cube {
-    animation-name: cube;
 }
 
 @keyframes zoom-in-out {
@@ -126,7 +113,7 @@ button:hover {
 @keyframes cube-rotate {
     0% {
         transform: rotateY(0);
-        opacity: 1;
+        opacity: 0.75;
     }
     25% {
         transform: rotateY(90deg);
@@ -142,10 +129,6 @@ button:hover {
     }
     100% {
         transform: rotateY(360deg);
-        opacity: 1;
+        opacity: 0.75;
     }
-}
-
-.cube-animation {
-    animation: cube-rotate var(--cube-duration) infinite;
 }
